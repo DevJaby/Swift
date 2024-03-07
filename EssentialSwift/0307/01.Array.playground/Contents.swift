@@ -169,7 +169,11 @@ mutableNums.reverse() // 역순으로 정렬
 mutableNums
 mutableNums.swapAt(0, 1) // index 0번째와 index 1번째 순서를 바꿈
 
-mutableNums.shuffle() // 배열 섞기
-mutableNums
-mutableNums.shuffled() // 섞었을 때를 보여줌 mutableNums 은 안바뀜
-mutableNums
+var numsArray = [3, 2, 1, 3, 4, 5, 6]
+numsArray.shuffle() // 배열 섞기
+numsArray
+
+let numsArray1 = [1, 3, 4]
+numsArray.shuffled() // 섞었을 때를 보여줌 mutableNums 은 안바뀜
+numsArray
+
