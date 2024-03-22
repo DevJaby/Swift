@@ -31,7 +31,7 @@ print(firstEvenNumber ?? "조건에 만족하는 요소가 없습니다.")
 let containsThree = numbers.contains(3)
 print(containsThree)
 
-//count(where:)
+//count
 // 조건에 맞는 요소의 개수를 셉니다.
 let countOfEvenNumbers = evenNumbers.count
 print(countOfEvenNumbers)
