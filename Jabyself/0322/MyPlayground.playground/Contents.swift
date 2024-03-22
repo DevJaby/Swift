@@ -36,8 +36,7 @@ print(containsThree)
 let countOfEvenNumbers = evenNumbers.count
 print(countOfEvenNumbers)
 
-//isEmpty
-// 배열이 비어 있는지 확인해요.
+//isEmpty43// 배열이 비어 있는지 확인해요.
 let isEmpty = numbers.isEmpty
 print(isEmpty)
 
@@ -50,3 +49,59 @@ print(reversedNumbers)
 // 배열에서 무작위 요소를 선택해요.
 let randomNumbers = numbers.randomElement()
 print(randomNumbers!)
+
+func loveCalculator() {
+    //    let loveScore = Int.random(in: 0...100)
+    //    if loveScore > 80 {
+    //        print("love")
+    //    } else if loveScore > 40 {
+    //        print("coke")
+    //    } else {
+    //        print("alone")
+    //    }
+    //}
+
+    let loveScore = Int.random(in: 0...100)
+    switch loveScore {
+    case 80...100:
+        print("love")
+    case 40..<80:
+        print("coke")
+    case 0..<40:
+        print("alone")
+    default: 0
+    }
+}
+
+loveCalculator()
+
+//Don't change this
+//var aYear =  Int(readLine()!)!
+
+func isLeap(year: Int) {
+    
+    //Write your code inside this function.
+    if year % 100 == 0 && year % 400 != 0 {
+        print("NO")
+    } else if year % 4 == 0 {
+        print("YES")
+    } else {
+        print("NO")
+    }
+}
+
+isLeap(year: 2104)
+
+var duration = 60 // 1분 = 60초
+
+var timer: Timer?
+
+func startTimer() {
+  timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+    duration -= 1
+    // 남은 시간 표시
+    print("남은 시간: \(duration)초")
+  }
+}
+
+startTimer()
