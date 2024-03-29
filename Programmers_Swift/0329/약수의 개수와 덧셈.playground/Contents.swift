@@ -29,3 +29,4 @@ func countDivisors(_ n: Int) -> Int {
     
     return count
 }
+
